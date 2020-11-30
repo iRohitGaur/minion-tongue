@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    --primary-color: #F2C94C;
+    --footer-color: #2c3e50;
+    --fonts-rg: 'Indie Flower', cursive;
+}
+
+body {
+    font-family: var(--fonts-rg);
+    margin: 0px;
+}
+
+/** navigation **/
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .logo {
+    text-align: left;
+    padding: 1rem;
+    max-width: 40%;
+}
+
+.navigation .title {
+    font-size: 4rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+}
+
+/** header img **/
+.header-img {
+    margin: auto;
+    padding-top: 2rem;
+    max-width: 80%;
+}
+
+/** textarea **/
+textarea {
+    display: block;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    padding: 1rem;
+    font-family: var(--fonts-rg);
+    font-size: larger;
+}
+
+/** button **/
+button {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: var(--fonts-rg);
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    border: 0px;
+}
+
+/** output div **/
+.output {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/** footer **/
+.footer {
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .navigation .title {
+        font-size: 3rem;
+    }
+}
+
+/* On screens that are 500px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .navigation .title {
+        font-size: 2rem;
+    }
+
+    .navigation .logo {
+        max-width: 30%;
+    }
+}
