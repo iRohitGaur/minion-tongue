@@ -93,6 +93,19 @@ button {
     font-size: 1.2rem;
 }
 
+.about {
+    margin: auto;
+    text-align: justify;
+    max-width: 600px;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .navigation .title {
